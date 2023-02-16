@@ -6,6 +6,14 @@
 /*****************************************************/
 /* Always add your CSS below the reset CSS           */
 /*****************************************************/
+:root {
+  --indigo: #355070;
+  --misty-violet: #6d597a;
+  --soft-magenta: #b56576;
+  --bright-rose: #e56b6f;
+  --sandy: #faeae1;
+}
+
 *,
 *::before,
 *::after {
@@ -13,7 +21,7 @@
 }
 
 * {
-  /* margin: 0; */
+  margin: 0;
   /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
   line-height: calc(1em + 0.5rem);
 }
@@ -28,7 +36,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* img,
+img,
 picture,
 video,
 canvas,
@@ -36,7 +44,7 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 input,
 button,
@@ -83,3 +91,52 @@ img[src$="svg"] {
 }
 
 /************ add your CSS here *****************/
+body {
+  font-family: Lato;
+  color: #040404;
+}
+
+h1 {
+  font-family: Playfair Display;
+  color: var(--indigo);
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: Playfair Display;
+  color: var(--misty-violet);
+}
+
+h3 {
+  font-family: Playfair Display;
+  color: var(--soft-magenta);
+}
+
+h4 {
+  font-family: Playfair Display;
+  color: var(--bright-rose);
+}
+
+a {
+  text-decoration: none;
+  color: var(--soft-magenta);
+}
+
+a[href]:hover {
+  color: var(--bright-rose);
+}
+
+.button {
+  color: var(--soft-magenta);
+  border: 3px solid var(--soft-magenta);
+  padding: 0.2em 0.4em;
+  display: inline-block;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+button:hover {
+  color: white;
+  border: 3px solid white;
+  background-color: var(--soft-magenta);
+}
