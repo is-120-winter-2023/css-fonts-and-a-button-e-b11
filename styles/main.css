@@ -132,11 +132,12 @@ a[href]:hover {
   border: 3px solid var(--soft-magenta);
   padding: 0.2em 0.4em;
   display: inline-block;
-  transition: background-color 300ms ease, color 300ms ease;
+  transition: background-color 300ms ease, color 300ms ease, border 300ms ease;
 }
 
-button:hover {
+.button:hover#button {
   color: white;
   border: 3px solid white;
   background-color: var(--soft-magenta);
+  text-decoration: none;
 }
