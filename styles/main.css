@@ -96,6 +96,14 @@ body {
   color: #040404;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
 h1 {
   font-family: Playfair Display;
   color: var(--indigo);
@@ -106,16 +114,41 @@ h1 {
 h2 {
   font-family: Playfair Display;
   color: var(--misty-violet);
+  font-size: 2rem;
 }
 
 h3 {
   font-family: Playfair Display;
   color: var(--soft-magenta);
+  font-size: 2rem;
 }
 
 h4 {
   font-family: Playfair Display;
   color: var(--bright-rose);
+  font-size: 1.25rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+article,
+aside {
+  margin-bottom: 4em;
+}
+
+footer p {
+  background-color: var(--indigo);
+  color: var(--sandy);
+  padding: 3rem 1rem 6rem;
+  margin: 0;
 }
 
 a {
@@ -133,6 +166,7 @@ a[href]:hover {
   padding: 0.2em 0.4em;
   display: inline-block;
   transition: background-color 300ms ease, color 300ms ease, border 300ms ease;
+  margin-top: 1em;
 }
 
 .button:hover#button {
