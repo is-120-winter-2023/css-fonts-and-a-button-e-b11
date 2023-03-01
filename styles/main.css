@@ -158,6 +158,7 @@ a {
 
 a[href]:hover {
   color: var(--bright-rose);
+  font-weight: bold;
 }
 
 .button {
@@ -169,7 +170,7 @@ a[href]:hover {
   margin-top: 1em;
 }
 
-.button:hover #button {
+.button:hover {
   color: white;
   border: 3px solid white;
   background-color: var(--soft-magenta);
