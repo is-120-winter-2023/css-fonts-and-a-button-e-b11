@@ -170,9 +170,10 @@ a[href]:hover {
   margin-top: 1em;
 }
 
-.button:hover {
+a.button:hover {
   color: white;
   border: 3px solid white;
   background-color: var(--soft-magenta);
   text-decoration: none;
+  font-weight: normal;
 }
